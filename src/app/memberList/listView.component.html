@@ -1,0 +1,14 @@
+
+
+<div class="bg">
+   
+    <button class="btn btn-success" (click)="newBool=true;">New Member</button>
+    <div *ngIf="(newBool===true)">
+        <app-MemberInput (memberCreated)="addMember($event)"></app-MemberInput>
+        <button class="btn btn-success" (click)="newBool=false">Hide</button>
+    </div>
+    <ul *ngFor="let member of memberList; let i=index">
+        <li><app-MemberItem [data]="member" (onDelete)="deleteMember(i)"></app-MemberItem></li>
+    </ul>
+
+</div>

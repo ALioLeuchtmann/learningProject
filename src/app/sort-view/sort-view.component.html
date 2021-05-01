@@ -1,0 +1,24 @@
+
+
+<div class="bg">
+  <ul style="display:inline; margin:0 auto; padding:1;" *ngFor="let val of array; let i=index">
+     
+    <li class="balken" [ngStyle]="{'padding-top':getSize(i) }" >.</li>
+    
+  </ul>
+</div>
+<button (click)="bubbleSort()" class="btn btn-danger extraBtn">BubbleSort</button>
+<button (click)="startQuickSort()"  class="btn btn-danger extraBtn">QuickSort</button>
+<button (click)="startMergeSort()"  class="btn btn-danger extraBtn">MergeSort</button>
+<hr>
+<label class="info">Settings:</label>
+<div>
+  <label class="info">New Array (n max 300):</label>
+  <input class="shortIn" [(ngModel)]="numb" type="text">
+  <button (click)="newArray()"   class="btn btn-danger">OK</button>
+</div>
+<div>
+  <label class="info">Operation Timer (ms):</label>
+  <input class="shortIn" [(ngModel)]="stopTime" type="text">
+  <button class="btn btn-danger">OK</button>
+</div>

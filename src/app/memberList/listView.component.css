@@ -1,0 +1,16 @@
+
+/*  generall center container div*/
+.bg
+{
+   margin:0 auto;
+   width:50%;
+   height:100%;
+   background-color: rgba(255,255,255,1);
+   overflow-y: scroll;  
+   
+}
+
+ul
+{
+    list-style-type:none;
+}

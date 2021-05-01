@@ -1,0 +1,16 @@
+
+
+.bg
+{
+    background-color:rgb(49, 41, 42);
+    width:100%;
+    height:100%;
+    min-height:100%;
+    padding:0;
+ 
+    background-image: url("http://cdn26.us1.fansshare.com/photo/backgroundimage/radiolive-website-background-ea-for-website-582240216.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+}

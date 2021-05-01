@@ -1,0 +1,13 @@
+<div class="bg ">
+
+  <app-header (newMode)="changeMode($event)"></app-header>
+
+<!--Changing displayed content depending on Clicked button of the Header -->
+<!--(click) in header -> emit Event with clicked button -> set mode Var in mainComponent  -->
+  <app-sort-view *ngIf="(mode==='element1')"></app-sort-view>
+  <app-listView *ngIf="(mode==='element2')">Site 2</app-listView>
+  <label *ngIf="(mode==='element3')">Site 3</label>
+  <label *ngIf="(mode==='element4')">Site 4</label>
+
+</div>
+

@@ -1,0 +1,14 @@
+
+<div class="frame">
+
+<div *ngFor="let item of rowArray;let i=index">
+    <div class="formRow">
+        <label class="description" [innerHtml]=item.labelIdentifier></label>
+        <input *ngIf="i!=6" [(ngModel)]="rowArray[i].inputValue" (ngModelChange)="test(i)" type="text">
+        <input *ngIf="i===6" [(ngModel)]="rowArray[i].inputValue" (ngModelChange)="test(i)" type="date" [min]="minDob" [max]="maxDob">
+        <label class="nok" *ngIf="(item.state==='invalid')" [innerHtml]=item.state></label>
+        <label class="ok"  *ngIf="(item.state==='valid')" [innerHtml]=item.state></label>
+    </div>
+</div>
+<button class="btn btn-primary" (click)="checkInputValid()" >Add member</button>
+</div>

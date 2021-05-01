@@ -1,0 +1,12 @@
+<div class="cont">
+
+    <div><label class="description">Firstname: </label><label>{{data.firstName}}</label></div>
+    <div><label class="description">Lastname:  </label><label>{{data.lastName}}</label></div>
+    <div><label class="description">Adress:  </label><label>{{data.adress}}</label></div>
+    <div><label class="description">Email:  </label><label>{{data.eMail}}</label></div>
+    <div><label class="description">ID:  </label><label>{{data.ID}}</label></div>
+    <div><label class="description">Occupation:  </label><label>{{data.occupation}}</label></div>
+    <div><label class="description">Date of Birth:  </label><label>{{data.bDate}}</label></div>
+    
+    <button class="btn btn-primary">Edit</button><button class="btn btn-danger" (click)="onDelete.emit()">Delete</button>
+</div>

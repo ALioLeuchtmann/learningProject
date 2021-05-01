@@ -1,0 +1,37 @@
+.description
+{
+    padding-left:1%;
+    width:15%;
+}
+
+.frame
+{
+    width:60%;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-bottom:10px;
+    margin-top: 10px;
+}
+
+
+.ok
+{  
+
+    padding-right:0;
+    color:green;
+}
+.nok
+{
+    padding-right:0;
+    color:red;
+}
+
+.formRow
+{
+
+    margin:0 auto;
+    display: flex;
+    align-items:center;
+
+
+}

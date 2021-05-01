@@ -1,0 +1,11 @@
+.cont
+{
+    background-color: rgba(252, 2, 2,0.8);
+    border:2px solid black;
+}
+
+.description
+{
+    padding-left:1%;
+    width:15%;
+}
